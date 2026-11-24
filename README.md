@@ -284,7 +284,7 @@ La salida íntegra de demostración y pruebas está en [evidencia_ejecucion.txt]
 
 Según las indicaciones, en la semana 15 se entregan el archivo Python, el README y el enlace del repositorio en Canvas. En GitHub se publican los archivos del proyecto y se comparte el repositorio con **`lmelendez-tecsup`**. Subir también la carpeta `capturas` es necesario para que las imágenes del README se visualicen correctamente.
 
-La presentación de la semana 16 debe tener entre 10 y 15 diapositivas y durar 8 minutos. La fecha exacta se consulta en Canvas. El enlace del repositorio se incorpora después de crear o seleccionar el repositorio y publicarlo en la cuenta del equipo.
+La presentación de la semana 16 debe tener entre 10 y 15 diapositivas y durar 8 minutos. La fecha exacta se consulta en Canvas. El repositorio del proyecto está disponible en [ROL4Ndev/bateria4-sistema-impresion](https://github.com/ROL4Ndev/bateria4-sistema-impresion).
 
 La presentación preparada tiene **15 diapositivas** e incluye notas para los expositores: [Abrir presentación en Canva](https://www.canva.com/d/5f1H1_tQs_jI-Rh). El reparto de los 8 minutos y los puntos para explicar están en `docs/exposicion/GUION_EXPOSICION.md`.
 
