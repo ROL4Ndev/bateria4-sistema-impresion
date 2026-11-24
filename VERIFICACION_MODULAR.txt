@@ -1,9 +1,0 @@
-VERIFICACIÓN DE LA REORGANIZACIÓN
-
-main.py: 48 verificaciones correctas.
-sistema_impresion.py: 48 verificaciones correctas.
-Demostraciones modular y oficial: salidas idénticas.
-Menú: carga, consulta, inicio, finalización, cancelación, estadísticas y salida idénticos.
-Argumento inválido: ambas versiones terminan con código 2.
-Entrega aislada: funciona sin módulos ni carpetas adicionales.
-Generación determinista: archivo oficial idéntico al original, incluidas sus líneas.

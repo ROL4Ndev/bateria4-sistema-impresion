@@ -3,15 +3,15 @@
 **Trabajo final · Batería 4 · Ejercicio 1**  
 **Integrantes:** Rolando Sanchez y Christian Roque
 
-**Documentación:** [Informe técnico en Word](Informe_Sistema_Impresion_Sanchez_Roque.docx). El informe desarrolla el problema, el diseño, los algoritmos y las evidencias. Este README reúne la documentación solicitada para el repositorio.
+**Documentación:** [Informe técnico en Word](docs/informe/Informe_Sistema_Impresion_Sanchez_Roque.docx). El informe desarrolla el problema, el diseño, los algoritmos y las evidencias. Este README reúne la documentación solicitada para el repositorio.
 
 ## Archivos para la exposición
 
 [Diseño editable en Canva](https://www.canva.com/d/5f1H1_tQs_jI-Rh). Las copias PowerPoint y PDF incluidas reproducen el rediseño aprobado.
 
-- [Diapositivas en PowerPoint](Diapositivas_Sistema_Impresion.pptx).
-- [Diapositivas en PDF](Diapositivas_Sistema_Impresion.pdf).
-- [Guion de Rolando Sanchez y Christian Roque](GUION_EXPOSICION.md).
+- [Diapositivas en PowerPoint](docs/presentacion/Diapositivas_Sistema_Impresion.pptx).
+- [Diapositivas en PDF](docs/presentacion/Diapositivas_Sistema_Impresion.pdf).
+- [Guion de Rolando Sanchez y Christian Roque](docs/exposicion/GUION_EXPOSICION.md).
 
 ## Organización del proyecto y entrega
 
@@ -286,6 +286,6 @@ Según las indicaciones, en la semana 15 se entregan el archivo Python, el READM
 
 La presentación de la semana 16 debe tener entre 10 y 15 diapositivas y durar 8 minutos. La fecha exacta se consulta en Canvas. El enlace del repositorio se incorpora después de crear o seleccionar el repositorio y publicarlo en la cuenta del equipo.
 
-La presentación preparada tiene **15 diapositivas** e incluye notas para los expositores: [Abrir presentación en Canva](https://www.canva.com/d/5f1H1_tQs_jI-Rh). El reparto de los 8 minutos y los puntos para explicar están en `GUION_EXPOSICION.md`.
+La presentación preparada tiene **15 diapositivas** e incluye notas para los expositores: [Abrir presentación en Canva](https://www.canva.com/d/5f1H1_tQs_jI-Rh). El reparto de los 8 minutos y los puntos para explicar están en `docs/exposicion/GUION_EXPOSICION.md`.
 
 Los diagramas incluyen sus archivos fuente `.dot` en `diagramas`. Las imágenes del README se conservan en `capturas`, `imagenes_codigo` y `diagramas`; deben subirse junto al archivo Markdown.

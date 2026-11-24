@@ -5,3 +5,10 @@ venv/
 .env
 .DS_Store
 Thumbs.db
+
+# Archivos locales de preparacion
+/enunciados/
+/LEEME_PRIMERO.txt
+/QUE_SUBIR.md
+/VERIFICACION_MODULAR.txt
+/Presentacion_Canva.url
