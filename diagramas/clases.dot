@@ -1,0 +1,14 @@
+digraph G {
+        graph [rankdir=TB,bgcolor="white",pad=.2,nodesep=.45,ranksep=.9,splines=ortho];
+        node [shape=record,fontname="Arial",fontsize=16,color="#33516E",style=filled,fillcolor="#F0F5FA",margin=".18,.15"];
+        edge [color="#33516E",arrowsize=.8];
+        S[label="{SistemaImpresion|validar y coordinar}"];
+        I[label="{Impresora|actual y contadores}"];
+        C[label="{ColaPrioridad|insertar  extraer  cancelar}"];
+        L[label="{ListaTrabajos|historial de trabajos}"];
+        N[label="{Nodo|trabajo y siguiente}"];
+        T[label="{Trabajo|datos y estado}"];
+        {rank=same;S;I;C;} {rank=same;L;N;T;}
+        S->I;I->C;S->L;L->N;N->T;C->N;
+        I->N[style=invis];C->T[style=invis];
+        }

@@ -1,0 +1,42 @@
+BATERÍA 4 · EJERCICIO 1
+Rolando Sanchez y Christian Roque
+
+CONTENIDO
+Diapositivas_Sistema_Impresion.pptx: presentación editable, 15 diapositivas.
+Diapositivas_Sistema_Impresion.pdf: versión para lectura.
+Informe_Sistema_Impresion_Sanchez_Roque.docx y .pdf: informe completo.
+GUION_EXPOSICION.md: guion dividido entre ambos integrantes.
+sistema_impresion.py: código fuente.
+README.md: documentación y comandos.
+evidencia_ejecucion.txt: salida de ejecución.
+capturas/: evidencias del programa.
+imagenes_codigo/: imágenes del código.
+diagramas/: imágenes y fuentes editables DOT.
+enunciados/: documentos originales de la actividad.
+
+EJECUTAR DESDE ESTA CARPETA
+python sistema_impresion.py
+python sistema_impresion.py --demo
+python sistema_impresion.py --pruebas
+
+En Windows también puedes usar py en lugar de python.
+
+ORGANIZACIÓN MODULAR
+main.py: punto de entrada para desarrollar y ejecutar por módulos.
+impresion/: seis clases, interfaz de consola y pruebas separadas.
+herramientas/generar_entrega.py: reúne los módulos en sistema_impresion.py.
+.github/workflows/verificar.yml: comprobaciones automáticas en GitHub.
+
+La guía exige UN archivo .py para Canvas. Entregar sistema_impresion.py.
+Para trabajar por módulos: python main.py
+Para generar la entrega: python herramientas/generar_entrega.py
+Después ejecutar las pruebas de ambas versiones.
+
+El informe, las diapositivas y las imágenes describen el archivo oficial,
+que conserva exactamente el mismo código y los mismos números de línea.
+
+PRESENTACIÓN ACTUALIZADA
+15 diapositivas con el diseño aprobado.
+PowerPoint y PDF: copias del rediseño para exposición y entrega.
+Diseño editable en Canva: https://www.canva.com/d/5f1H1_tQs_jI-Rh
+Consultar QUE_SUBIR.md para la entrega.

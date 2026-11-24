@@ -1,0 +1,26 @@
+name: Verificar sistema de impresión
+on: [push, pull_request]
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Comprobar archivo de entrega actualizado
+        run: |
+          python herramientas/generar_entrega.py
+          git diff --exit-code -- sistema_impresion.py
+      - name: Verificar ambas versiones
+        run: |
+          python main.py --pruebas
+          python sistema_impresion.py --pruebas
+      - name: Comparar demostraciones
+        run: |
+          python main.py --demo > /tmp/modular.txt
+          python sistema_impresion.py --demo > /tmp/entrega.txt
+          diff -u /tmp/modular.txt /tmp/entrega.txt

@@ -1,0 +1,102 @@
+$ python sistema_impresion.py --demo
+
+SISTEMA SIMPLE DE IMPRESIÓN - DEMOSTRACIÓN
+Rolando Sanchez y Christian Roque
+
+1. COLA DE LA IMPRESORA 1: prioridad y FIFO
+ID       ARCHIVO                USUARIO             PAGS  PRIOR. IMP ESTADO
+T02      urgente.pdf            Christian Roque        2  Alta    1  Pendiente
+T03      planos.pdf             Rolando Sanchez        4  Alta    1  Pendiente
+T01      informe.pdf            Rolando Sanchez        6  Normal  1  Pendiente
+
+2. TIEMPOS INICIALES
+Impresora 1: 60 s (1 min 00 s)
+Impresora 2: 15 s (0 min 15 s)
+Impresora 3: 25 s (0 min 25 s)
+Carga acumulada de las tres: 100 s (1 min 40 s)
+Tiempo para vaciar todas en paralelo: 60 s (1 min 00 s)
+Estimación sin nuevas llegadas. El trabajo activo reserva su duración completa.
+
+3. PROCESAMIENTO
+Iniciado: T02
+Completado: T02
+Cancelado: T01
+Iniciado: T03
+Completado: T03
+
+4. HISTORIAL DE ROLANDO
+ID       ARCHIVO                USUARIO             PAGS  PRIOR. IMP ESTADO
+T01      informe.pdf            Rolando Sanchez        6  Normal  1  Cancelado
+T03      planos.pdf             Rolando Sanchez        4  Alta    1  Completado
+T05      resumen.pdf            Rolando Sanchez        5  Normal  3  Pendiente
+Trabajos enviados por Rolando: 3
+
+5. ESTADÍSTICAS FINALES
+Trabajos completados: 2
+Páginas totales impresas: 6
+Usuario(s) con más impresiones (1 trabajo(s) completado(s)):
+  Christian Roque
+  Rolando Sanchez
+Impresora(s) con más completados (2):
+  Impresora 1
+
+6. TIEMPOS FINALES
+Impresora 1: 0 s (0 min 00 s)
+Impresora 2: 15 s (0 min 15 s)
+Impresora 3: 25 s (0 min 25 s)
+Carga acumulada de las tres: 40 s (0 min 40 s)
+Tiempo para vaciar todas en paralelo: 25 s (0 min 25 s)
+Estimación sin nuevas llegadas. El trabajo activo reserva su duración completa.
+
+$ python sistema_impresion.py --pruebas
+
+OK 01: Sistema vacío: cero trabajos y páginas
+OK 02: Sistema vacío: sin usuario líder
+OK 03: No iniciar una cola vacía
+OK 04: No completar sin trabajo activo
+OK 05: Prioridad Alta y FIFO entre altas
+OK 06: Tres colas independientes y 5 s por página
+OK 07: Rechazar ID duplicado
+OK 08: Rechazar páginas inválidas: 0
+OK 09: Rechazar páginas inválidas: -1
+OK 10: Rechazar páginas inválidas: 1.5
+OK 11: Rechazar páginas inválidas: True
+OK 12: Rechazar prioridad inválida: 0
+OK 13: Rechazar prioridad inválida: 3
+OK 14: Rechazar prioridad inválida: True
+OK 15: Rechazar impresora inválida: 0
+OK 16: Rechazar impresora inválida: 4
+OK 17: Rechazar impresora inválida: True
+OK 18: Rechazar ID vacío
+OK 19: Rechazar archivo vacío
+OK 20: Rechazar usuario vacío
+OK 21: Errores de entrada no registran trabajos
+OK 22: Extraer el siguiente trabajo prioritario
+OK 23: Activo mantiene su duración reservada
+OK 24: No iniciar otro trabajo en una impresora ocupada
+OK 25: No cancelar el trabajo activo
+OK 26: Cambio a estado Completado
+OK 27: Contar solo trabajos y páginas completados
+OK 28: Impedir doble contabilización al completar
+OK 29: No cancelar un completado
+OK 30: Cancelar pendiente al final
+OK 31: Cancelar actualiza tiempo y tamaño
+OK 32: Rechazar ID inexistente
+OK 33: No cancelar dos veces
+OK 34: No reutilizar ID cancelado
+OK 35: Consultar y contar por usuario normalizado
+OK 36: Usuario inexistente: cero trabajos
+OK 37: Conservar empates entre usuarios
+OK 38: Líder por trabajos completados
+OK 39: Páginas impresas excluyen pendientes y cancelados
+OK 40: Colas vaciadas: tiempo cero
+OK 41: FIFO entre trabajos normales
+OK 42: Cancelar nodo medio, cabeza y último
+OK 43: Cancelar único nodo deja cola vacía
+OK 44: Alta nueva no interrumpe un trabajo activo
+OK 45: Actividad simultánea en impresoras distintas
+OK 46: Tiempo incluye activo más nuevas llegadas
+OK 47: Conservar empate entre impresoras
+OK 48: Historial conserva el estado cancelado
+
+RESULTADO: 48 verificaciones correctas.

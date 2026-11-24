@@ -1,0 +1,10 @@
+digraph G { graph [rankdir=TB,bgcolor="white",pad=.2,nodesep=.45,ranksep=.38]; node [shape=box,fontname="Arial",fontsize=16,color="#33516E",style="rounded,filled",fillcolor="#F0F5FA",margin=".17,.12"];edge [fontname="Arial",fontsize=14,color="#33516E",arrowsize=.8];
+a[label="Recibir trabajo validado y crear nodo",shape=oval];
+b[label="¿Cola vacía o prioridad nueva\nmenor que la cabeza?",shape=diamond,fillcolor="#FFF1D3"];
+c[label="Insertar antes de la cabeza"];
+d[label="actual = cabeza"];
+e[label="¿Hay siguiente y su prioridad\nes menor o igual a la nueva?",shape=diamond,fillcolor="#FFF1D3"];
+f[label="Avanzar actual al siguiente"];
+g[label="Insertar nuevo después de actual"];
+h[label="Sumar cantidad y segundos\nFin",shape=oval];
+a->b;b->c[label="Sí"];b->d[label="No"];d->e;e->f[label="Sí"];f->e;e->g[label="No"];c->h;g->h; }
